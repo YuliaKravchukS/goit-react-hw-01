@@ -1,4 +1,6 @@
-const TransactionItem = ({type, amount, currency}) => {
+import css from "./TransactionItem.module.css";
+
+const TransactionItem = ({ type, amount, currency }) => {
   return (
     <tr>
       <td>{type}</td>

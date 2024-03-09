@@ -1,14 +1,19 @@
-const Profile = ({name, tag, location, image, stats}) => {
+//import clsx from "clsx";
+import css from "./Profile.module.css";
+
+
+const Profile = ({ name, tag, location, image, stats }) => {
   return (
-    <div>
-  <div>
-    <img
+    <div className={css.profile}>
+  <div className={css.user}>
+        <img
+          className={css.profileImg}
       src={image}
       alt="User avatar"
     />
-    <p>{name}</p>
-    <p>@{tag}</p>
-    <p>{location}</p>
+    <p className={css.nameText}>{name}</p>
+    <p className={css.userText}>@{tag}</p>
+    <p className={css.userText}>{location}</p>
   </div>
 
   <ul>
